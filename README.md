@@ -1,0 +1,2 @@
+# kasir
+project kasir C++
