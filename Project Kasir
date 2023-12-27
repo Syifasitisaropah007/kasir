@@ -1,0 +1,27 @@
+#include <iostream>
+#include <iomanip> // Untuk setprecision
+
+using namespace std;
+
+int main() {
+    // Deklarasi variabel
+    int jumlahItem;
+    double hargaItem, totalPembelian = 0;
+
+    // Input jumlah item
+    cout << "Masukkan jumlah item yang dibeli: ";
+    cin >> jumlahItem;
+
+    // Input harga dan menghitung total pembelian
+    for (int i = 1; i <= jumlahItem; ++i) {
+        cout << "Masukkan harga item ke-" << i << ": ";
+        cin >> hargaItem;
+        totalPembelian += hargaItem;
+    }
+
+    // Menampilkan total pembelian dengan 2 desimal
+    cout << fixed << setprecision(2);
+    cout << "Total pembelian: Rp " << totalPembelian << endl;
+
+    return 0;
+}
